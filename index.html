@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App | Faruq</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- CONTAINER -->
+    <div class="mf-container">
+        <!-- HEADER -->
+        <div class="mf-header">
+            <h1 class="mf-text-center mf-text-white">Bookshelf App</h1>
+        </div>
+        <!-- END HEADER -->
+
+        <!-- CONTENT ADD BOOK -->
+        <div class="mf-content">
+            <h2 class="mf-text-center mf-text-blue">Masukkan Buku Baru</h2>
+            <form action="#" id="form">
+                <div class="mf-form">
+                    <label for="bookShelfTitle" class="mf-form-label mf-text-blue">Judul</label>
+                    <input id="bookShelfTitle" type="text" class="mf-form-input" required>
+                </div>
+                <div class="mf-form">
+                    <label for="bookShelfAuthor" class="mf-form-label mf-text-blue">Penulis</label>
+                    <input id="bookShelfAuthor" type="text" class="mf-form-input" required>
+                </div>
+                <div class="mf-form">
+                    <label for="bookShelfYear" class="mf-form-label mf-text-blue">Tahun</label>
+                    <input id="bookShelfYear" type="number" class="mf-form-input" required>
+                </div>
+                <div class="mf-form">
+                    <label for="bookShelfCheckbox" class="mf-form-label mf-text-blue">Selesai dibaca</label>
+                    <input id="bookShelfCheckbox" type="checkbox">
+                </div>
+                <div class="mf-form">
+                    <button id="bookShelfSubmit" name="submit" type="submit" class="mf-form-button mf-text-white">
+                        Masukkan Buku ke rak Belum selesai dibaca
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!-- END CONTENT ADD BOOK -->
+
+        <!-- CONTENT SEARCH -->
+        <div class="mf-content">
+            <h2 class="mf-text-center mf-text-blue">Cari Buku (Opsional)</h2>
+            <form>
+                <div class="mf-form">
+                    <label for="searchTitle" class="mf-form-label mf-text-blue">Judul</label>
+                    <input id="searchTitle" type="text" class="mf-form-input">
+                </div>
+                <div class="mf-form">
+                    <button id="searchSubmit" type="submit" class="mf-form-button mf-text-white">
+                        Cari
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!-- END CONTENT SEARCH -->
+
+        <!-- BELUM SELESAI DIBACA -->
+        <div class="mf-content">
+            <h2 class="mf-text-blue">Belum selesai dibaca</h2>
+            <div id="bookShelf">
+
+            </div>
+        </div>
+        <!-- END BELUM SELESAI DIBACA -->
+
+        <!-- SELESAI DIBACA -->
+        <div class="mf-content">
+            <h2 class="mf-text-blue">Selesai dibaca</h2>
+            <div id="completedBookShelf">
+
+            </div>
+        </div>
+    </div>
+    <!-- END SELESAI DIBACA -->
+
+    </div>
+    <!-- END CONTAINER -->
+
+    <!-- JAVASCRIPT -->
+    <script src="./Assets/js/script.js" type="text/javascript"></script>
+
+</body>
+
+</html>
